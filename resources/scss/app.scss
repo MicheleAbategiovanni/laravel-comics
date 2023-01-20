@@ -1,3 +1,9 @@
 @use './partials/jumbotron';
 
 @import '~bootstrap/scss/bootstrap';
+
+
+.fs-xs{
+    font-size: .5rem;
+    font-weight: bold;
+}

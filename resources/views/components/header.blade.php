@@ -1,11 +1,11 @@
 <header>
-    <div class="d-flex justify-content-end px-3 bg-primary text-white">
+    <div class="d-flex justify-content-end px-3 py-1 bg-primary text-white">
         <div class="px-5">
-            <h6>DC POWER™ VISA®</h6>
+            <div class="fs-xs">DC POWER™ VISA®</div>
         </div>
 
         <div>
-            <h6>ADDITIONAL DC SITES▼</h6>
+            <div class="fs-xs">ADDITIONAL DC SITES▼</div>
         </div>
 
     </div>
