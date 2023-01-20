@@ -20,11 +20,11 @@
     @include('components.jumbotron')
 
     {{-- Contenuto --}}
-    <div class="container">
+    <main>
         {{-- segnaposto per il contenuto di ogni pagina.
         Questo dovrà essere sostituito in ogni pagina con un contenuto diverso --}}
         @yield('content')
-    </div>
+    </main>
 
     {{-- Banner --}}
 
