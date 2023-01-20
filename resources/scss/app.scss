@@ -1,14 +1,35 @@
-@use './partials/jumbotron';
+@use "./partials/jumbotron";
 
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-
-.fs-xs{
-    font-size: .5rem;
+.fs-xs {
+    font-size: 0.5rem;
     font-weight: bold;
 }
 
-.my-box{
-    margin-top: -.7rem;
+.my-box {
+    margin-top: -0.7rem;
     position: absolute;
+}
+
+.img-comic {
+    aspect-ratio: 1/1;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+
+    @media (max-width: 768px) {
+        aspect-ratio: auto 1/1;
+        aspect-ratio: 1/1;
+        max-width: 50%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+
+.row {
+    @media (max-width: 576px) {
+        text-align: center;
+    }
 }

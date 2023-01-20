@@ -21,8 +21,6 @@
 
     {{-- Contenuto --}}
     <main>
-        {{-- segnaposto per il contenuto di ogni pagina.
-        Questo dovrà essere sostituito in ogni pagina con un contenuto diverso --}}
         @yield('content')
     </main>
 

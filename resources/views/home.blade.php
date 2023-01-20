@@ -17,8 +17,23 @@
 </section>
 
 <section class="bg-dark py-4">
-  <div class="container">
-    <h2 class="text-white">prova</h2>
+  <div class="container py-3">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 text-white g-4 px-2">
+
+      @foreach ($listComics as $comic)
+
+      <div class="col">
+        <a href="#">
+          <img src="{{$comic['thumb']}}" alt="" class="img-comic">
+        </a>
+        <div class="fw-small">{{$comic['series']}}</div>
+      </div>
+
+      @endforeach
+
+    </div>
+
   </div>
 </section>
 
