@@ -1,11 +1,11 @@
 <header>
     <div class="d-flex justify-content-end px-3 py-1 bg-primary text-white">
         <div class="px-5">
-            <div class="fs-xs">DC POWER™ VISA®</div>
+            <a class="fs-xs text-white nav-link" href="#">DC POWER™ VISA®</a>
         </div>
 
         <div>
-            <div class="fs-xs">ADDITIONAL DC SITES▼</div>
+            <a class="fs-xs text-white nav-link" href="#">ADDITIONAL DC SITES ▼</a>
         </div>
 
     </div>
