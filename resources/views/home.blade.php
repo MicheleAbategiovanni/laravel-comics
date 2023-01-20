@@ -34,6 +34,10 @@
 
     </div>
 
+    <div class="text-center mt-5 ">
+      <button class="btn bg-primary fw-bold text-white rounded-0 px-5">LOAD MORE</button>
+    </div>
+
   </div>
 </section>
 
