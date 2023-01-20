@@ -16,11 +16,17 @@
     {{-- header --}}
     @include('components.header')
 
+    {{-- Jumbotron --}}
+    @include('components.jumbotron')
+
+    {{-- Contenuto --}}
     <div class="container">
         {{-- segnaposto per il contenuto di ogni pagina.
         Questo dovrà essere sostituito in ogni pagina con un contenuto diverso --}}
         @yield('content')
     </div>
+
+    {{-- Banner --}}
 
     {{-- footer --}}
     @include('components.footer')
