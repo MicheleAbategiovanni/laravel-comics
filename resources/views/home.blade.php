@@ -27,7 +27,7 @@
         <a href="#">
           <img src="{{$comic['thumb']}}" alt="" class="img-comic">
         </a>
-        <div class="fw-small">{{$comic['series']}}</div>
+        <div class="fw-small mt-2">{{$comic['series']}}</div>
       </div>
 
       @endforeach
