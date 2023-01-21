@@ -130,9 +130,33 @@ $shopLinks=["Shop DC","Shop DC Collectbles"];
                         <a class="nav-link px-2 fw-bold fs-5" href="#">FOLLOW US</a>
                     </li>
 
-                    <li class="text-white" v-for="iconList in icon">
+                    <li class="text-white">
                         <a class="nav-link px-2" href="#">
-                            <img src="" alt="" class="text-dark">
+                            <img src="{{Vite::asset('resources/imgs/footer-facebook.png')}}" alt="" class="text-dark">
+                        </a>
+                    </li>
+
+                    <li class="text-white">
+                        <a class="nav-link px-2" href="#">
+                            <img src="{{Vite::asset('resources/imgs/footer-twitter.png')}}" alt="" class="text-dark">
+                        </a>
+                    </li>
+
+                    <li class="text-white">
+                        <a class="nav-link px-2" href="#">
+                            <img src="{{Vite::asset('resources/imgs/footer-youtube.png')}}" alt="" class="text-dark">
+                        </a>
+                    </li>
+
+                    <li class="text-white">
+                        <a class="nav-link px-2" href="#">
+                            <img src="{{Vite::asset('resources/imgs/footer-pinterest.png')}}" alt="" class="text-dark">
+                        </a>
+                    </li>
+
+                    <li class="text-white">
+                        <a class="nav-link px-2" href="#">
+                            <img src="{{Vite::asset('resources/imgs/footer-periscope.png')}}" alt="" class="text-dark">
                         </a>
                     </li>
 
