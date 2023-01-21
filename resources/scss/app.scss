@@ -46,3 +46,14 @@
     background-repeat: no-repeat;
 
 }
+
+.position-comic{
+    position: absolute;
+    bottom: 0;
+
+    &>img{
+        @media (max-width: 768px) {
+            height: 130px;
+        }
+    }
+}

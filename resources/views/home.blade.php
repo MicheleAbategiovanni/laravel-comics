@@ -24,7 +24,7 @@
       @foreach ($listComics as $comic)
 
       <div class="col">
-        <a href="#">
+        <a href="/comics/{{$comic['link']}}">
           <img src="{{$comic['thumb']}}" alt="" class="img-comic">
         </a>
         <div class="fw-small mt-2">{{$comic['series']}}</div>

@@ -9,6 +9,7 @@ return [
         "series" => "Action Comics",
         "sale_date" => "2018-10-02",
         "type" => "comic book",
+        "link" => "action-comics",
         "artists" => [
             "José Luis García-López",
             "Clay Mann",
@@ -46,6 +47,7 @@ return [
         "series" => "American Vampire 1976",
         "sale_date" => "2020-10-06",
         "type" => "comic book",
+        "link" => "american-vampire-1976",
         "artists" => [
             "Rafael Albuquerque"
         ],
@@ -61,6 +63,7 @@ return [
         "series" => "Aquaman",
         "sale_date" => "2018-01-24",
         "type" => "graphic novel",
+        "link" => "aquaman",
         "artists" => [
             "Stjepan Sejic"
         ],
@@ -76,6 +79,7 @@ return [
         "series" => "Batgirl",
         "sale_date" => "2016-07-27",
         "type" => "comic book",
+        "link" => "batgirl",
         "artists" => [
             "Rafael Albuquerque"
         ],
@@ -91,6 +95,7 @@ return [
         "series" => "Batman",
         "sale_date" => "2018-10-03",
         "type" => "comic book",
+        "link" => "batman",
         "artists" => [
             "Tony S. Daniel"
         ],
@@ -106,6 +111,7 @@ return [
         "series" => "Batman Beyond",
         "sale_date" => "2016-10-26",
         "type" => "comic book",
+        "link" => "batman-beyond",
         "artists" => [
             "Bernard Chang"
         ],
@@ -121,6 +127,7 @@ return [
         "series" => "Batman/Superman",
         "sale_date" => "2019-08-28",
         "type" => "comic book",
+        "link" => "batman-superman",
         "artists" => [
             "David Marquez"
         ],
@@ -136,6 +143,7 @@ return [
         "series" => "Batman/Superman Annual",
         "sale_date" => "2020-09-29",
         "type" => "comic book",
+        "link" => "batman-superman-annual",
         "artists" => [
             "Clayton Henry",
             "Gleb Melnikov",
@@ -153,6 +161,7 @@ return [
         "series" => "Batman: The Joker War Zone",
         "sale_date" => "2020-09-29",
         "type" => "comic book",
+        "link" => "batman-the-joker-war-zone",
         "artists" => [
             "Guillem March",
             "Ashley A. Woods",
@@ -174,6 +183,7 @@ return [
         "series" => "Batman: Three Jokers",
         "sale_date" => "2020-08-25",
         "type" => "comic book",
+        "link" => "batman-three-jokers",
         "artists" => [
             "Jason Fabok"
         ],
@@ -189,6 +199,7 @@ return [
         "series" => "Batman: White Knight Presents: Harley Quinn",
         "sale_date" => "2020-10-20",
         "type" => "comic book",
+        "link" => "batman-white-knight",
         "artists" => [
             "Matteo Scalera"
         ],
@@ -204,6 +215,7 @@ return [
         "series" => "Catwoman",
         "sale_date" => "2019-04-10",
         "type" => "graphic novel",
+        "link" => "catwoman",
         "artists" => [
             "Fernando Blanco",
             "Joëlle Jones"
