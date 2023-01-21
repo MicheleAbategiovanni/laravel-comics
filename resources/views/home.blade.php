@@ -42,4 +42,48 @@
 </section>
 
 
+<section class="bg-primary">
+  <div class="container py-5">
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 justify-content-center align-items-center gy-3">
+      
+      <div class="col">
+        <a href="#" class="nav-link text-white fw-bold">
+          <img src="{{Vite::asset('resources/imgs/buy-comics-digital-comics.png')}}" class="img-fluid" width="50" alt="DIGITAL COMICS">
+          <span>DIGITAL COMICS</span>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#" class="nav-link text-white fw-bold">
+          <img src="{{Vite::asset('resources/imgs/buy-comics-merchandise.png')}}" class="img-fluid" width="50" alt="DC MERCHANDISE">
+          <span>DC MERCHANDISE</span>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#" class="nav-link text-white fw-bold">
+          <img src="{{Vite::asset('resources/imgs/buy-comics-shop-locator.png')}}" class="img-fluid" width="35" height="55" alt="SUBSCRIPTION">
+          <span>SUBSCRIPTION</span>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#" class="nav-link text-white fw-bold">
+          <img src="{{Vite::asset('resources/imgs/buy-comics-subscriptions.png')}}" class="img-fluid" width="50"  alt="COMIC SHOP LOCATOR">
+          <span>COMIC SHOP LOCATOR</span>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#" class="nav-link text-white fw-bold">
+          <img src="{{Vite::asset('resources/imgs/buy-dc-power-visa.svg')}}" class="img-fluid" width="50" alt="DC POWER VISA">
+          <span>DC POWER VISA</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 @endsection
