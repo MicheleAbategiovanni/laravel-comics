@@ -86,56 +86,82 @@
 </section>
 
 <section class="bg-secondary">
-    <div class="container ">
-        <div class="row">
+
+    <div class="container pb-5">
+
+        <div class="row gx-5">
             <div class="col">
-                <h4 class="py-3 border border-bottom">Talent</h4>
 
-                <div class="d-flex justify-content-between">
-                    <span>Art by:</span>
+                <h4 class="py-3 border-bottom border-0 rounded-0 ">Talent</h4>
 
-                    @foreach($listComics as $artists => $comic)
+                <div class="row py-2 border-bottom border-0 rounded-0">
+
+                    <div class="col">
+                        <h6>Art by:</h6>
+                    </div>
+
+                    <div class="col">
+
+                        @foreach($listComics as $artists => $comic)
 
 
-                    @foreach($comic['artists'] as $artist)
-                    @if ($comic['title'] === 'Action Comics #1000: The Deluxe Edition')
+                        @foreach($comic['artists'] as $artist)
+                        @if ($comic['title'] === 'Action Comics #1000: The Deluxe Edition')
 
-                    <span>{{ $artist }},</span>
+                        <span>{{ $artist }},</span>
 
-                    @endif
-                    @endforeach
+                        @endif
+                        @endforeach
 
-                    @endforeach
+                        @endforeach
+
+                    </div>
+
                 </div>
 
-                <div>
-                    <h6>Written by:</h6>
+                <div class="row py-2 border-bottom border-0 rounded-0">
 
-                    @foreach($listComics as $writers => $comic)
+                    <div class="col">
+                        <h6>Written by:</h6>
+
+                    </div>
+
+                    <div class="col">
+
+                        @foreach($listComics as $writers => $comic)
 
 
-                    @foreach($comic['writers'] as $writer)
-                    @if ($comic['title'] === 'Action Comics #1000: The Deluxe Edition')
+                        @foreach($comic['writers'] as $writer)
+                        @if ($comic['title'] === 'Action Comics #1000: The Deluxe Edition')
 
-                    <span>{{ $writer }},</span>
+                        <span>{{ $writer }},</span>
 
-                    @endif
-                    @endforeach
+                        @endif
+                        @endforeach
 
-                    @endforeach
+                        @endforeach
+
+                    </div>
 
                 </div>
 
             </div>
             <div class="col">
-                <h4 class="py-3">Specs</h4>
+                <h4 class="py-3 border-bottom border-0 rounded-0">Specs</h4>
 
                 @foreach ($listComics as $comic)
                 @if ($comic['title'] === 'Action Comics #1000: The Deluxe Edition')
 
-                <div class="d-flex justify-content-between">
-                    <h6>Series</h6>
-                    <h6>{{$comic['series']}}</h6>
+                <div class="row py-2 border-bottom border-0 rounded-0">
+
+                    <div class="col">
+                        <h6>Series</h6>
+                    </div>
+
+                    <div class="col">
+                        <h6>{{$comic['series']}}</h6>
+                    </div>
+
                 </div>
 
                 @endif
@@ -144,9 +170,16 @@
                 @foreach ($listComics as $comic)
                 @if ($comic['title'] === 'Action Comics #1000: The Deluxe Edition')
 
-                <div class="d-flex justify-content-between">
-                    <h6>U.S Price:</h6>
-                    <h6>{{$comic['price']}}</h6>
+                <div class="row py-2 border-bottom border-0 rounded-0">
+
+                    <div class="col">
+                        <h6>U.S Price:</h6>
+                    </div>
+
+                    <div class="col">
+                        <h6>{{$comic['price']}}</h6>
+                    </div>
+
                 </div>
 
                 @endif
@@ -155,9 +188,16 @@
                 @foreach ($listComics as $comic)
                 @if ($comic['title'] === 'Action Comics #1000: The Deluxe Edition')
 
-                <div class="d-flex justify-content-between">
-                    <h6>On Sale Date:</h6>
-                    <h6>{{$comic['sale_date']}}</h6>
+                <div class="row py-2 border-bottom border-0 rounded-0">
+
+                    <div class="col">
+                        <h6>On Sale Date:</h6>
+                    </div>
+
+                    <div class="col">
+                        <h6>{{$comic['sale_date']}}</h6>
+                    </div>
+
                 </div>
 
                 @endif
@@ -165,30 +205,51 @@
 
             </div>
         </div>
+
     </div>
 </section>
 
-<section class="bg-secondary">
-    <div class="container pt-5">
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 justify-content-center align-items-center gy-3">
+<section class="bg-secondary border">
+    <div class="container ">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 justify-content-center align-items-stratch">
 
-            <div class="col">
-                <a href="#" class="nav-link text-white fw-bold">
-                    <span>DIGITAL COMICS</span>
-                    <img src="{{Vite::asset('resources/imgs/buy-comics-digital-comics.png')}}" class="img-fluid"
-                        width="50" alt="DIGITAL COMICS">
-                </a>
+            <div class="col border">
+                <div class="row py-3">
+
+                    <div class="col">
+                        <a href="#" class="nav-link text-white fw-bold">
+                            <span>DIGITAL COMICS</span>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <img src="{{Vite::asset('resources/imgs/buy-comics-digital-comics.png')}}" class="img-fluid"
+                            width="50" alt="DIGITAL COMICS">
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="col">
-                <a href="#" class="nav-link text-white fw-bold">
-                    <span>SHOP DC</span>
-                    <img src="{{Vite::asset('resources/imgs/buy-comics-merchandise.png')}}" class="img-fluid" width="50"
-                        alt="DC MERCHANDISE">
-                </a>
+            <div class="col border">
+                <div class="row py-3">
+
+                    <div class="col">
+                        <a href="#" class="nav-link text-white fw-bold">
+                            <span>SHOP DC</span>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <img src="{{Vite::asset('resources/imgs/buy-comics-merchandise.png')}}" class="img-fluid"
+                            width="50" alt="DC MERCHANDISE">
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="col">
+            <div class="col border">
                 <a href="#" class="nav-link text-white fw-bold">
                     <span>COMIC SHOP LOCATOR</span>
                     <img src="{{Vite::asset('resources/imgs/buy-comics-shop-locator.png')}}" class="img-fluid"
@@ -196,7 +257,7 @@
                 </a>
             </div>
 
-            <div class="col">
+            <div class="col border">
                 <a href="#" class="nav-link text-white fw-bold">
                     <span>SUBSCRIPTION</span>
                     <img src="{{Vite::asset('resources/imgs/buy-comics-subscriptions.png')}}" class="img-fluid"
