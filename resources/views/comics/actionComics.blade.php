@@ -11,7 +11,16 @@
 
         @if ($comic['title'] === 'Action Comics #1000: The Deluxe Edition')
         <div class="position-comic ">
+            <div class="container-comics-top">
+                <div>COMIC BOOK</div>
+            </div>
             <img src="{{$comic['thumb']}}" height="200" alt="" class="">
+
+            <div class="container-comics-bottom">
+                <a href="#" class="nav-link fs-small">
+
+                    VIEW GALLERY</a>
+            </div>
         </div>
         @endif
 
@@ -21,9 +30,10 @@
     </div>
 </section>
 
+{{-- Section for Tabels and IMG Advertisement --}}
 <section>
     <div class="container py-5">
-        <div class="row py-2">
+        <div class="row row-cols-1 row-cols-md-2 py-2">
 
             <div class="col">
 
@@ -34,29 +44,20 @@
                 <div>
                     <h3>{{$comic['title']}}</h3>
 
-                    <div class="row align-items-center">
 
-                        <div class="col">
+                    <div class="d-flex justify-content-between px-2 border border-3 border-success border-start-0 bg-success bg-gradient">
 
-                            <div
-                                class="row row-cols-lg-2 justify-content-between border border-3 border-success border-start-0 bg-success bg-gradient">
-
-                                <div class="col">
-                                    <span>U.S Price:
-                                        <span class="text-white">{{$comic['price']}}</span>
-                                    </span>
-                                </div>
-
-                                <div class="col text-end">
-                                    <div>AVAILABLE</div>
-                                </div>
-
-                            </div>
-
+                        <div>
+                            <span>U.S Price:
+                                
+                            </span>
+                            <span class="text-white">{{$comic['price']}}</span>
                         </div>
 
-                        <div class="col border border-3 border-success border-start-0 bg-success bg-gradient">
-                            <h6 class="text-white">Check Availability ▼</h6>
+                        <div>
+                            <span>AVAILABLE</span>
+
+                            <span class="text-white">Check Availability ▼</span>
                         </div>
 
                     </div>
@@ -74,7 +75,7 @@
 
             </div>
 
-            <div class="col">
+            <div class="col d-none d-md-flex">
                 <div class="text-end">
                     <div class="text-secondary">ADVERTISEMENT</div>
                     <img src="{{Vite::asset('resources/imgs/adv.jpg')}}" class="img-fluid" alt="action comic">
@@ -85,6 +86,7 @@
     </div>
 </section>
 
+{{-- Section for info comic --}}
 <section class="bg-secondary">
 
     <div class="container pb-5">
@@ -209,22 +211,23 @@
     </div>
 </section>
 
-<section class="bg-secondary border">
+{{-- Section for icon nav --}}
+<section class="bg-icon-comics border">
     <div class="container ">
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 justify-content-center align-items-stratch">
 
             <div class="col border">
-                <div class="row py-3">
+                <div class="row py-3 ">
 
                     <div class="col">
-                        <a href="#" class="nav-link text-white fw-bold">
+                        <a href="#" class="nav-link fw-bold text-secondary">
                             <span>DIGITAL COMICS</span>
                         </a>
                     </div>
 
                     <div class="col text-end">
-                        <img src="{{Vite::asset('resources/imgs/buy-comics-digital-comics.png')}}" class="img-fluid"
-                            width="50" alt="DIGITAL COMICS">
+                        <img src="{{Vite::asset('resources/imgs/buy-comics-digital-comics.png')}}"
+                            class="img-fluid text-secondary" width="50" alt="DIGITAL COMICS">
                     </div>
 
                 </div>
@@ -235,14 +238,14 @@
                 <div class="row py-3">
 
                     <div class="col">
-                        <a href="#" class="nav-link text-white fw-bold">
+                        <a href="#" class="nav-link text-secondary fw-bold">
                             <span>SHOP DC</span>
                         </a>
                     </div>
 
                     <div class="col text-end">
-                        <img src="{{Vite::asset('resources/imgs/buy-comics-merchandise.png')}}" class="img-fluid"
-                            width="50" alt="DC MERCHANDISE">
+                        <img src="{{Vite::asset('resources/imgs/buy-comics-merchandise.png')}}"
+                            class="img-fluid text-secondary" width="50" alt="DC MERCHANDISE">
                     </div>
 
                 </div>
@@ -252,14 +255,14 @@
             <div class="col border">
                 <div class="row py-3">
                     <div class="col">
-                        <a href="#" class="nav-link text-white fw-bold">
+                        <a href="#" class="nav-link text-secondary fw-bold">
                             <span>COMIC SHOP LOCATOR</span>
                         </a>
                     </div>
 
                     <div class="col text-end">
-                        <img src="{{Vite::asset('resources/imgs/buy-comics-shop-locator.png')}}" class="img-fluid"
-                            width="35" height="55" alt="SUBSCRIPTION">
+                        <img src="{{Vite::asset('resources/imgs/buy-comics-shop-locator.png')}}"
+                            class="img-fluid text-secondary" width="35" height="55" alt="SUBSCRIPTION">
                     </div>
 
                 </div>
@@ -268,14 +271,14 @@
 
             <div class="col border">
                 <div class="row py-3">
-               
+
                     <div class="col">
-                        <a href="#" class="nav-link text-white fw-bold">
+                        <a href="#" class="nav-link text-secondary fw-bold">
                             <span>SUBSCRIPTION</span>
                         </a>
                     </div>
-                    
-                    <div class="col text-end">
+
+                    <div class="col text-end text-secondary">
                         <img src="{{Vite::asset('resources/imgs/buy-comics-subscriptions.png')}}" class="img-fluid"
                             width="50" alt="COMIC SHOP LOCATOR">
                     </div>
